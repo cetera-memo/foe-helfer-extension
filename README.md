@@ -27,3 +27,13 @@ node manifests/build.js --zip
 ```
 
 creates `foe-v<version>.zip` (Chrome), `foe-v<version>-edge.zip` (Edge) and `foe-v<version>-firefox.zip`. Pass a version (`node manifests/build.js 4.9.0.0 --zip`) to bump it first.
+
+## AI Assistance & Acknowledgements
+
+This fork includes modifications developed with assistance from **ChatGPT (OpenAI)**.
+
+ChatGPT assisted with the design, implementation, integration, and troubleshooting of custom functionality, particularly the *Placed Buildings* module, including its filtering, sorting, and building statistics features.
+
+The repository owner directed the development process, integrated the modifications, tested the resulting extension, and is responsible for maintaining this fork.
+
+The original FoE Helper project and its contributors retain their respective acknowledgements and licensing notices. This fork is an independent customization and is not an official release of FoE Helper.
