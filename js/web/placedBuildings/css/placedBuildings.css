@@ -1,0 +1,24 @@
+/* Scoped styling for the Placed Buildings register */
+#placedbuildingsBody .pb-wrap { padding: 8px; }
+#placedbuildingsBody .pb-toolbar { display:flex; gap:8px; margin-bottom:10px; align-items:center; }
+#placedbuildingsBody #pb-search { flex:1; min-width:180px; padding:7px 9px; }
+#placedbuildingsBody .pb-filters { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:8px; margin-bottom:10px; align-items:start; }
+#placedbuildingsBody .pb-filter-box, #placedbuildingsBody .pb-select { border:1px solid var(--border-color, #888); border-radius:4px; padding:7px; min-width:0; }
+#placedbuildingsBody .pb-filter-box summary { cursor:pointer; font-weight:600; }
+#placedbuildingsBody .pb-check-list { display:flex; flex-direction:column; gap:4px; max-height:155px; overflow:auto; padding:7px 2px 2px; }
+#placedbuildingsBody .pb-check { display:flex; align-items:center; gap:6px; font-weight:normal; cursor:pointer; }
+#placedbuildingsBody .pb-check input { margin:0; }
+#placedbuildingsBody .pb-empty-filter { opacity:.65; }
+#placedbuildingsBody .pb-select { display:flex; flex-direction:column; gap:5px; font-size:12px; }
+#placedbuildingsBody .pb-select select { max-width:100%; }
+#placedbuildingsBody .pb-summary { padding:7px 9px; margin:7px 0; font-weight:600; background:rgba(127,127,127,.12); border-radius:4px; }
+#placedbuildingsBody .pb-table-wrap { overflow:auto; max-height:52vh; border:1px solid rgba(127,127,127,.25); }
+#placedbuildingsBody .pb-table { min-width:1500px; width:100%; border-collapse:collapse; font-size:12px; }
+#placedbuildingsBody .pb-table thead th { position:sticky; top:0; z-index:2; white-space:nowrap; }
+#placedbuildingsBody .pb-table td { white-space:nowrap; vertical-align:middle; }
+#placedbuildingsBody .pb-table td:first-child { white-space:normal; min-width:180px; }
+#placedbuildingsBody .pb-entity-id { display:block; opacity:.6; font-size:10px; }
+#placedbuildingsBody .pb-group-row td { font-weight:700; background:rgba(127,127,127,.18); }
+#placedbuildingsBody .pb-no-results { text-align:center; padding:24px; }
+#placedbuildingsBody .pb-locate { padding:3px 7px; font-size:11px; }
+#placedbuildingsBody .pb-note { margin-top:8px; font-size:11px; opacity:.75; }

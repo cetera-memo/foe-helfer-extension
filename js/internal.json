@@ -20,28 +20,42 @@
 	"unit",
 	{
 		"name": "calculator",
-		"parts": ["settings"]
+		"parts": [
+			"settings"
+		]
 	},
 	"infoboard",
 	{
 		"name": "productions",
-		"parts": ["rating", "tables"]
+		"parts": [
+			"rating",
+			"tables"
+		]
 	},
 	{
 		"name": "part-calc",
-		"parts": ["copybox", "powerleveling", "settings"]
+		"parts": [
+			"copybox",
+			"powerleveling",
+			"settings"
+		]
 	},
 	"alerts",
 	{
 		"name": "guild_fights",
-		"parts": ["province_map", "ranking"]
+		"parts": [
+			"province_map",
+			"ranking"
+		]
 	},
 	"stats",
 	"bonus-service",
 	"technologies",
 	{
 		"name": "negotiation",
-		"parts": ["solver"]
+		"parts": [
+			"solver"
+		]
 	},
 	"eventchests",
 	"settings",
@@ -51,13 +65,20 @@
 	"battle-assist",
 	{
 		"name": "citymap",
-		"parts": ["city-buildings"]
+		"parts": [
+			"city-buildings"
+		]
 	},
 	{
 		"name": "city-builder",
-		"parts": ["worker", "renderer", "interaction"]
+		"parts": [
+			"worker",
+			"renderer",
+			"interaction"
+		]
 	},
 	"building-marker",
+	"placedBuildings",
 	"hidden-rewards",
 	"greatbuildings",
 	"gbbonus",

@@ -31,6 +31,7 @@ let _menu = {
 	Items: [
 		//'calculator',
 		'citySearch',
+		'placedBuildings',
 		'checklist',
 		'gbBonuses',
 		'ascended',
@@ -348,6 +349,7 @@ let _menu = {
 		{ id: 'ascended', title: i18n('Menu.Ascended.Title'), description: i18n('Menu.Ascended.Desc') },
 		{ id: 'checklist', title: i18n('Menu.Checklist.Title'), description: i18n('Menu.Checklist.Desc') },
 		{ id: 'citySearch', title: i18n('Menu.CitySearch.Title'), description: i18n('Menu.CitySearch.Desc') },
+		{ id: 'placedBuildings', title: ({ en: 'Placed Buildings', fr: 'Bâtiments placés', de: 'Platzierte Gebäude', tr: 'Yerleştirilmiş Binalar' })[(localStorage.getItem('user-language') || 'en').toLowerCase().split('-')[0]] || 'Placed Buildings', description: ({ en: 'Browse and filter structures occupying tiles in your main city.', fr: 'Consulter et filtrer les structures occupant des cases dans votre ville principale.', de: 'Gebäude und Strukturen in deiner Hauptstadt durchsuchen und filtern.', tr: 'Ana şehrinizde alan kaplayan yapıları görüntüleyin ve filtreleyin.' })[(localStorage.getItem('user-language') || 'en').toLowerCase().split('-')[0]] || 'Browse and filter structures occupying tiles in your main city.' },
 		{ id: 'gbBonuses', title: i18n('Menu.GBBonuses.Title'), description: i18n('Menu.GBBonuses.Desc') },
 		{ id: 'stats', title: i18n('Menu.Stats.Title'), description: i18n('Menu.Stats.Desc') },
 		{ id: 'settings', title: i18n('Menu.Settings.Title'), description: i18n('Menu.Settings.Desc') },
@@ -658,6 +660,21 @@ let _menu = {
 
 		let btn_sp = $('<span />').on('click', function () {
 			CitySearch.init();
+		});
+
+		return btn.append(btn_sp);
+	},
+
+	/**
+	 * Register of all tile-occupying structures in the main city.
+	 */
+	placedBuildings_Btn: () => {
+		let btn = _menu.MakeButton('placedBuildings');
+		let btn_sp = $('<span />').css({
+			backgroundImage: `url("${extUrl}css/images/menu/citymap.png")`,
+			backgroundSize: 'auto 60%'
+		}).on('click', function () {
+			PlacedBuildings.init();
 		});
 
 		return btn.append(btn_sp);
